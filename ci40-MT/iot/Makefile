@@ -1,12 +1,12 @@
-TOOLCHAIN_DIR=../mips-2016.05/
+TOOLCHAIN_DIR=../mips-mti-linux-gnu/2016.05-03/
 
 BIN_DIR=$(TOOLCHAIN_DIR)bin/
 
-TOOL_PREFIX=mips-linux-gnu-
+TOOL_PREFIX=mips-mti-linux-gnu-
 
 GCC=$(BIN_DIR)$(TOOL_PREFIX)gcc
 
-CFLAGS=-std=c99 -Wall -O3 -msoft-float -g -EL -DRTELINUX -D_GNU_SOURCE -march=1004kc -DNDEBUG -pthread -static 
+CFLAGS=-std=c99 -Wall -O3 -msoft-float -g -EL -DRTELINUX -D_GNU_SOURCE -march=interAptiv -DNDEBUG -pthread -static 
 
 LD_DIR=../letmecreate/
 
