@@ -6,8 +6,8 @@ For discussion on this topic please use the thread on our forum: [https://forum.
 
 Setup
 ______
-1. Give execute permission to setup script chmod +x 'setup.sh'
+1. Give execute permission to setup script(under ci40-MT folder) using 'chmod +x setup.sh'
 2. Run the setup.sh script provided (./setup.sh)
 3. This should install the MIPS Codescape Toolchain
-4. Then run the make file in the respective folders
+4. Then run the make file in the respective folders(ci40-MT/accumulator/, ci40-MT/iot/)
 
