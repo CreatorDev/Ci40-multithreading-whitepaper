@@ -1,4 +1,3 @@
-#!/bin/sh -V
 #install gcc cross compiler
 
 
