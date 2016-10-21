@@ -1,11 +1,16 @@
-#!/bin/sh -V
 #install gcc cross compiler
 
 
 echo "Downloading mips linux compiler"
+MACHINE_TYPE=`uname -m`
+if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+  wget http://codescape-mips-sdk.imgtec.com/components/toolchain/2016.05-03/Codescape.GNU.Tools.Package.2016.05-03.for.MIPS.MTI.Linux.CentOS-5.x86_64.tar.gz
+else
+  wget http://codescape-mips-sdk.imgtec.com/components/toolchain/2016.05-03/Codescape.GNU.Tools.Package.2016.05-03.for.MIPS.MTI.Linux.CentOS-5.x86.tar.gz
+fi
 
-wget https://sourcery.mentor.com/GNUToolchain/package14486/public/mips-linux-gnu/mips-2016.05-8-mips-linux-gnu-i686-pc-linux-gnu.tar.bz2
+
 
 echo "Extracting mips-linux-gnu-gcc"
 
-tar -xvf mips-2016.05-8-mips-linux-gnu-i686-pc-linux-gnu.tar.bz2 
+tar -xvf Codescape.GNU.Tools.Package.*.tar.gz 
