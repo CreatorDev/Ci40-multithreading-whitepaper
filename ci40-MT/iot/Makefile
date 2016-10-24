@@ -6,7 +6,7 @@ TOOL_PREFIX=mips-mti-linux-gnu-
 
 GCC=$(BIN_DIR)$(TOOL_PREFIX)gcc
 
-CFLAGS=-std=c99 -Wall -O3 -msoft-float -g -EL -DRTELINUX -D_GNU_SOURCE -march=interAptiv -DNDEBUG -pthread -static 
+CFLAGS=-std=c99 -Wall -O3 -g -EL -DRTELINUX -D_GNU_SOURCE -march=interAptiv -DNDEBUG -pthread -static 
 
 LD_DIR=../letmecreate/
 
